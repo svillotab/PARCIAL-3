@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Login.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="Fotos/logo.png" alt="">
+        <a href="index.html" class="actual">Inicio</a>
+        <a href="Productos.html">Menú</a>
+        <a href="promociones.html">Promociones</a>
+        <a href="cuenta.html">Cuenta</a>
+        <form action="Sing.html" method="get">
+            <button class="custom-button" type="submit">Registrarse</button> 
+        </form>  
+    </div>
+
+    <div class="relative">
+        <img class="imgfondo" src="Imagenes/Log.png" alt="">
+        <div class="bod">
+            <p class="log">Iniciar sesión</p>
+            <form id="login-form">
+                <input class="Icon-email" placeholder="Email" type="email" id="email" required>
+                <input class="Icon-password" placeholder="Contraseña" type="password" id="password" required>
+                <a class="normaltext" href="#">Olvidaste tu contraseña?</a>
+                <button class="loginbutt" type="submit">INICIAR</button>
+            </form>
+            <p class="normaltext2">O Iniciar sesión con</p>
+
+            <div class="Opciones">
+                <button class="singup">
+                    <img class="sign-google" src="https://cdn.pixabay.com/photo/2021/05/24/09/15/google-logo-6278331_1280.png" alt="google">
+                </button>
+
+                <button class="singup">
+                    <img class="sign" src="https://cdn.iconscout.com/icon/free/png-512/free-microsoft-outlook-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722718.png?f=webp&w=512" alt="outlook">
+                </button>
+
+                <button class="singup-apple">
+                    <img class="sign-apple" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/apple-icon.png" alt="apple">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script> 
+</body>
+</html>

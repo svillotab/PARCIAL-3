@@ -1,0 +1,140 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+}
+
+/*                             MENU                              */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+    margin-top: 2%;
+}
+
+.menu img {
+    width: 15%;
+    margin-right: 10%;
+}
+
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.menu a.actual {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+
+.menu a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+
+.custom-button{
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    width: 152px;
+    height: 33px;
+}
+
+.custom-button:hover{
+    background-color:rgb(0, 125, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    margin-top: 5%;
+}
+
+.content-img {
+    width: 400px;
+}
+
+.info {
+    padding: 32px;
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
+.small-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-imgs-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.info h1 {
+    color: rgb(0, 125, 255);
+    margin: 0%;
+    margin-bottom: 3%;
+}
+
+.info p {
+    color: rgba(0, 0, 0, 0.569);
+    line-height: 1.5;
+}
+
+.info h3 {
+    color: rgb(243, 140, 1);
+    font-weight: 100;
+    margin: 0%;
+    font-size: 15px;
+}
+
+.info h2 {
+    color: rgb(243, 140, 1);
+}
+
+.actions a {
+        background-color:rgb(243, 140, 1);
+        color: rgb(255, 246, 231);
+        font-weight: 600;
+        font-size: medium;
+        border-radius: 7px;
+        width: 50%;
+        height: 33px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        margin-right: 2%;
+    }
+
+.actions a:hover {
+        background-color:rgb(0, 125, 255);
+        color: rgb(255, 255, 255);
+    }

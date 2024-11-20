@@ -1,0 +1,260 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(255, 246, 231);
+    margin: 0%;
+}
+
+/*                             MENU                              */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+    margin-top: 2%;
+}
+.menu img {
+    width: 15%;
+    margin-right: 10%;
+}
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.menu a.actual {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+.menu a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+
+.custom-button{
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    width: 152px;
+    height: 33px;
+}
+
+.custom-button:hover{
+    background-color:rgb(0, 125, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*                             TOTAL                              */
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0%;
+    margin-left: 7%;
+    margin-right: 5.5%;
+}
+
+
+
+
+/*                             CARRITO                              */
+.carrito {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 75%;
+    margin-bottom: 7%;
+}
+
+.carrito h1 {
+    margin: 0%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+.cat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: small;
+}
+.producto {
+    margin-right: 80%;
+    margin-left: 48%;
+}
+.precio {
+    margin-right: 3%;
+    margin-left: 80%;
+}
+.cantidad {
+    margin-right: 6%;
+    margin-left: 40%;
+}
+
+/*                             PRODUCTO 1                              */
+.pro1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+}
+.pro1 img {
+width: 30%;
+}
+.pro1 h5 {
+    background-color: rgb(255, 208, 147);
+    border-radius: 5px;
+    width: 8%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonimagen {
+    margin: 0%;
+    background: none;
+    border: none;
+    width: 6%;
+    margin-right: 6%;
+    
+}
+.botonimagen img {
+    width: 100%;
+}
+
+.botonimagen:hover img {
+    transform: scale(1.2); 
+}
+
+/*                             PRODUCTO 2                              */
+.pro2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0%;
+}
+.pro2 img {
+width: 30%;
+}
+.pro2 h2 {
+    margin-right: 7%;
+}
+.pro2 h5 {
+    background-color: rgb(255, 208, 147);
+    border-radius: 5px;
+    width: 8%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.botonimagen {
+    margin: 0%;
+    background: none;
+    border: none;
+    width: 6%;
+    margin-right: 6%;
+}
+.botonimagen img {
+    width: 100%;
+}
+
+
+
+
+/*                             CUENTA                              */
+.cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    align-self: right;
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 0%;
+}
+.azul {
+    width: 100%;
+    background-color:rgb(0, 125, 255);
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.azul h1 {
+    color: white;
+    text-align: center;
+}
+.adentro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8%;
+    margin-bottom: 0%;
+    color: white;
+}
+.adentro2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    color: white;
+}
+.res {
+    width: 100%;
+    background-color: rgb(0, 36, 145);
+    margin: 0%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.res h1 {
+    color: white;
+    margin: 8%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-size: medium;
+}
+
+.cuenta button {
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    width: 40%;
+    height: 33px;
+    margin-top: 5%;
+}
+.cuenta button:hover {
+    background-color:rgb(0, 125, 255);
+    color: rgb(255, 255, 255);
+}

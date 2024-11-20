@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contrasena.css">
+</head>
+<body>
+
+
+<div class="menu">
+    <img src="Fotos/logo.png" alt="Logo">
+    <a href="index.html">Inicio</a>
+    <a href="Productos.html">Menú</a>
+    <a href="promociones.html">Promociones</a>
+    <a href="cuenta.html" class="actual">Cuenta</a>
+    <form action="Login.html" method="get">
+        <button class="custom-button" type="submit">Iniciar sesión</button>  
+    </form>  
+</div>
+
+
+<div class="todo">
+    <div class="contenedor">
+
+      
+        <div class="perfilfoto">
+            <div class="foto">
+                <img src="Fotos/perfil.png" alt="Foto de perfil">
+            </div>
+            <div class="perfil">
+                <h1 id="perfil-nombre">Nombre</h1>
+                <h2 id="perfil-compras">0 Compras</h2>
+                <h4 id="perfil-profesion">Profesión</h4>
+            </div>
+        </div>
+
+       
+        <form id="info-form">
+            <div class="datosreal">
+                <div class="datos">
+                   
+                    <div class="column">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Juan" required>
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Pérez" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="juan.perez@universidad.edu.co" required>
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" placeholder="+57 311 123 4567" required>
+                    </div>
+
+                  
+                    <div class="column">
+                        <label for="id">ID</label>
+                        <input type="text" id="id" placeholder="Cédula de Ciudadanía" required>
+
+                        <label for="numero">Número del ID</label>
+                        <input type="text" id="numero" placeholder="1234567890" required>
+
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" placeholder="Calle 45 #10-12" required>
+
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" placeholder="Cali, Colombia" required>
+                    </div>
+                </div>
+            </div>
+
+       
+            <button type="submit" class="info-guar1">Guardar Información</button>
+        </form>
+
+        <div class="contenedor-centrado">
+            <div class="contraseña">
+                <form id="password-form">
+                    <label for="current-password">Cambio de Contraseña</label> <br>
+                    <input class="contras" type="password" id="current-password" name="current-password" placeholder="Contraseña actual" required>
+                    <br>
+                    <input class="contras" type="password" id="new-password" name="new-password" placeholder="Contraseña nueva" required>
+                    <button type="submit" class="info-guar">CAMBIAR</button>
+                </form>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+
+<script src="contrasena.js"></script>
+
+
+</body>
+</html>

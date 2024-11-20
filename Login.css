@@ -1,0 +1,233 @@
+
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+    margin-top: 2%;
+}
+
+.menu img {
+    width: 15%;
+    margin-right: 10%;
+}
+
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.menu a.actual {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+
+.menu a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+
+.custom-button{
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    width: 152px;
+    height: 33px;
+}
+
+.custom-button:hover{
+    background-color:rgb(0, 125, 255);
+    color: rgb(255, 255, 255);
+}
+
+.archivo-custom {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.imgfondo {
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.relative{
+    position: relative;
+}
+
+.bod {
+    width: 420px;
+    height: 560px;
+    background-color: white;
+    border-radius: 60px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 125px;
+    padding: 0px;
+}
+
+.log {
+    color: rgb(243, 140, 1);
+    font-family: "Archivo", sans-serif;
+    font-size: 40px; 
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+
+.Icon {
+    font-family: "Archivo", sans-serif; 
+    padding: 10px 20px 10px 20px;
+}
+
+.Icon-password {
+    font-family: "Archivo", sans-serif; 
+    padding: 20px 45px;
+    background-image: url(Imagenes/lock3.png);
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    margin-bottom: 17px;
+    color: grey;
+}
+
+.Icon-email {
+    font-family: "Archivo", sans-serif; 
+    padding: 20px 45px;
+    background-image: url(Imagenes/email.i.png);
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    margin-bottom: 17px;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+::placeholder{
+    color: grey;
+    font-family: "Archivo", sans-serif; 
+    font-size: 13px;
+}
+
+.singup {
+    border: none;
+    background-color: white;
+    padding: 0;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sign {
+    width: 33px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+
+.sign-apple {
+    width: 36px;
+    object-fit: contain;
+}
+
+.sign-google {
+    width: 33px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.singup-apple {
+    border: none;
+    background-color: white;
+    padding: 0;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Opciones {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .loginbutt{
+    border: none;
+    padding: 17px 45px;
+    background-color: rgb(243, 140, 1);
+    color: white;
+    width: 170px;
+    border-radius: 50px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 55px;
+    align-self: center;
+ }
+
+ .loginbutt:hover{
+    background-color: rgb(0, 125, 255);
+ }
+
+ .normaltext{
+    font-size: 15px;
+    margin-bottom: 35px;
+    margin-top: 3px;
+    color: black;
+    text-decoration: none;
+    align-self: center;
+ }
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+ .normaltext:hover{
+    color: rgb(0, 125, 255);
+    cursor: pointer;
+    font-size: 15px;
+ }
+
+ .normaltext2{
+    font-size: 15px;
+    color: rgb(191, 191, 191);
+    font-family: "Archivo", sans-serif; 
+ }
+
+ .normaltext, .loginbutt, .Opciones button {
+    font-family: "Archivo", sans-serif; 
+}

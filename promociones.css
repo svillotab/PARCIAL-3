@@ -1,0 +1,260 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(255, 246, 231);
+    margin: 0%;
+}
+
+/*                             MENU                              */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+    margin-top: 2%;
+}
+.menu img {
+    width: 15%;
+    margin-right: 10%;
+}
+.menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.menu a.actual {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+.menu a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(243, 140, 1);
+}
+
+.custom-button{
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    width: 152px;
+    height: 33px;
+}
+
+.custom-button:hover{
+    background-color:rgb(0, 125, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/*                             TITULO                              */
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+.arriba {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.arriba h1 {
+    margin-right: 30%;
+}
+.arriba {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.botonimagen {
+    background: none;
+    border: none;
+    width: 5%;
+    display: inline-block; 
+    margin-right: 5%;
+}
+
+.botonimagen img {
+    width: 100%; 
+    display: block; 
+    transition: transform 0.3s ease;
+}
+
+.botonimagen:hover img {
+    transform: scale(1.2);
+}
+
+
+.titulo p {
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+
+
+
+/*                             CONTENEDOR BLANCO                              */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5%;
+    margin-top: 0%;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+
+
+
+/*                             PRODUCTO 1                              */
+.producto1 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 125, 255);
+    border-radius: 15px;
+    margin: 8%;
+    margin-top: 6%;
+    position: relative;
+    overflow: visible;
+    height: 230px;
+    align-items: center;
+    justify-content: center;
+}
+.producto1 img {
+    position: absolute;
+    top: -63px;
+    left: -55px;
+    width: 40%;
+}
+.texto {
+    color: white;
+    text-align: left;
+    margin-left: 35%;
+    width: 40%;
+}
+.texto h5 {
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: medium;
+}
+.producto1 a {
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 7px;
+    width: 13%;
+    height: 33px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    margin-right: 2%;
+}
+.producto1 a:hover {
+    background-color:rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/*                             PRODUCTO 2                              */
+.producto2 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 125, 255);
+    border-radius: 15px;
+    margin: 8%;
+    margin-top: 1%;
+    position: relative;
+    overflow: visible;
+    height: 230px;
+    align-items: center;
+    justify-content: center;
+}
+.producto2 img {
+    position: absolute;
+    top: -63px;
+    left: -55px;
+    width: 40%;
+}
+.texto {
+    color: white;
+    text-align: left;
+    margin-left: 35%;
+    width: 40%;
+}
+.texto h5 {
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: medium;
+}
+.producto2 a {
+    background-color:rgb(243, 140, 1);
+    color: rgb(255, 246, 231);
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 7px;
+    width: 13%;
+    height: 33px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    margin-right: 2%;
+}
+.producto2 a:hover {
+    background-color:rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/*                             BANNER                              */
+
+.banner {
+    background-image: url(Fotos/Promocion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.banner h1 {
+    font-size: 102px;
+    margin: 0%;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1%;
+    line-height: 0.85;
+}
+.banner h3 {
+    margin: 0%;
+    font-weight: 400;
+    line-height: 1.5;
+}
