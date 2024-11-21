@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./Login.css">
 </head>
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
     <div class="menu">
-        <img src="Fotos/logo.png" alt="">
+        <img src="Fotos/logo.png" alt="Logo">
         <a href="index.html" class="actual">Inicio</a>
         <a href="Productos.html">Menú</a>
         <a href="promociones.html">Promociones</a>
@@ -22,32 +24,44 @@
     </div>
 
     <div class="relative">
-        <img class="imgfondo" src="Imagenes/Log.png" alt="">
+        <img class="imgfondo" src="Imagenes/Log.png" alt="Fondo">
         <div class="bod">
             <p class="log">Iniciar sesión</p>
             <form id="login-form">
                 <input class="Icon-email" placeholder="Email" type="email" id="email" required>
                 <input class="Icon-password" placeholder="Contraseña" type="password" id="password" required>
-                <a class="normaltext" href="#">Olvidaste tu contraseña?</a>
+                <a class="normaltext" href="#">¿Olvidaste tu contraseña?</a>
                 <button class="loginbutt" type="submit">INICIAR</button>
             </form>
-            <p class="normaltext2">O Iniciar sesión con</p>
-
+            <p class="normaltext2">O Inicia sesión con</p>
             <div class="Opciones">
                 <button class="singup">
-                    <img class="sign-google" src="https://cdn.pixabay.com/photo/2021/05/24/09/15/google-logo-6278331_1280.png" alt="google">
+                    <img class="sign-google" src="https://cdn.pixabay.com/photo/2021/05/24/09/15/google-logo-6278331_1280.png" alt="Google">
                 </button>
-
                 <button class="singup">
-                    <img class="sign" src="https://cdn.iconscout.com/icon/free/png-512/free-microsoft-outlook-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722718.png?f=webp&w=512" alt="outlook">
+                    <img class="sign" src="https://cdn.iconscout.com/icon/free/png-512/free-microsoft-outlook-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722718.png?f=webp&w=512" alt="Outlook">
                 </button>
-
                 <button class="singup-apple">
-                    <img class="sign-apple" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/apple-icon.png" alt="apple">
+                    <img class="sign-apple" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/apple-icon.png" alt="Apple">
                 </button>
             </div>
         </div>
     </div>
-    <script src="login.js"></script> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cuentaLink = document.querySelector('a[href="cuenta.html"]');
+            const loggedIn = localStorage.getItem('email') && localStorage.getItem('password');
+    
+            if (!loggedIn) {
+                cuentaLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert('Debes iniciar sesión o registrarte para acceder a tu cuenta.');
+                });
+            }
+        });
+    </script>
+
+<script src="login.js"></script>
 </body>
 </html>
