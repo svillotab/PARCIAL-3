@@ -73,6 +73,8 @@
 
            
             <button type="submit" class="info-guar">Guardar Información</button>
+            <button type="button" class="info-guar" id="logout-button">Cerrar Sesión</button>
+
         </form>
 
       
@@ -89,7 +91,18 @@
     </div>
 </div>
 
-<script src="cuenta.js"></script>
+
+    <script>
+        window.onload = function() {
+            const loggedIn = localStorage.getItem('email') && localStorage.getItem('password');
+            if (!loggedIn) {
+                alert('Debes iniciar sesión o registrarte para acceder a tu cuenta.');
+                window.location.href = 'Login.html';
+            }
+        };
+    </script>
+
+    <script src="cuenta.js"></script>
 
 </body>
 </html>

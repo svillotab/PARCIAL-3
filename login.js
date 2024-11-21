@@ -1,4 +1,3 @@
-
 const loginForm = document.getElementById('login-form');
 
 loginForm.addEventListener('submit', (e) => {
@@ -16,6 +15,7 @@ loginForm.addEventListener('submit', (e) => {
     }
 
     if (storedEmail === email && storedPassword === password) {
+        localStorage.setItem('isLoggedIn', 'true'); 
         alert('Inicio de sesión exitoso!');
         window.location.href = 'cuenta.html';
     } else {

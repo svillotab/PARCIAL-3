@@ -1,5 +1,12 @@
+window.onload = function () {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
-window.onload = function() {
+    if (!isLoggedIn) {
+        alert('Debes iniciar sesión para acceder a tu cuenta.');
+        window.location.href = 'Login.html';
+        return;
+    }
+
     const nombre = localStorage.getItem('nombre');
     const apellido = localStorage.getItem('apellido');
     const email = localStorage.getItem('email');
@@ -9,32 +16,17 @@ window.onload = function() {
     const direccion = localStorage.getItem('direccion');
     const ciudad = localStorage.getItem('ciudad');
 
-
     if (nombre) {
         document.getElementById('name').value = nombre;
         document.getElementById('perfil-nombre').innerText = nombre;
     }
-    if (apellido) {
-        document.getElementById('apellido').value = apellido;
-    }
-    if (email) {
-        document.getElementById('email').value = email;
-    }
-    if (telefono) {
-        document.getElementById('telefono').value = telefono;
-    }
-    if (id) {
-        document.getElementById('id').value = id;
-    }
-    if (numero) {
-        document.getElementById('numero').value = numero;
-    }
-    if (direccion) {
-        document.getElementById('direccion').value = direccion;
-    }
-    if (ciudad) {
-        document.getElementById('ciudad').value = ciudad;
-    }
+    if (apellido) document.getElementById('apellido').value = apellido;
+    if (email) document.getElementById('email').value = email;
+    if (telefono) document.getElementById('telefono').value = telefono;
+    if (id) document.getElementById('id').value = id;
+    if (numero) document.getElementById('numero').value = numero;
+    if (direccion) document.getElementById('direccion').value = direccion;
+    if (ciudad) document.getElementById('ciudad').value = ciudad;
 
     const compras = Math.floor(Math.random() * 100);
     const profesion = "Diseño de Modas";
@@ -68,7 +60,7 @@ infoForm.addEventListener('submit', (e) => {
     document.getElementById('perfil-nombre').innerText = nombre;
 
     const compras = Math.floor(Math.random() * 100);
-    const profesion = "Diseño de Modas"; 
+    const profesion = "Diseño de Modas";
     document.getElementById('perfil-compras').innerText = `${compras} Compras`;
     document.getElementById('perfil-profesion').innerText = profesion;
 
@@ -76,8 +68,8 @@ infoForm.addEventListener('submit', (e) => {
 });
 
 function cambiarContrasena() {
-    const contrasenaIngresada = document.getElementById('password').value; 
-    const contrasenaGuardada = localStorage.getItem('password'); 
+    const contrasenaIngresada = document.getElementById('password').value;
+    const contrasenaGuardada = localStorage.getItem('password');
 
     if (contrasenaIngresada === contrasenaGuardada) {
         window.location.href = 'contrasena.html';
@@ -87,6 +79,15 @@ function cambiarContrasena() {
 }
 
 document.querySelector('.contraseña a').addEventListener('click', (e) => {
-    e.preventDefault(); 
-    cambiarContrasena(); 
+    e.preventDefault();
+    cambiarContrasena();
+});
+
+document.getElementById('logout-button').addEventListener('click', () => {
+    const confirmLogout = confirm('¿Estás seguro de que deseas cerrar sesión?');
+    if (confirmLogout) {
+        localStorage.setItem('isLoggedIn', 'false'); // Marcar como no autenticado
+        alert('Has cerrado sesión exitosamente.');
+        window.location.href = 'Login.html';
+    }
 });
