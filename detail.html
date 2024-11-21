@@ -39,6 +39,20 @@
     </div>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cuentaLink = document.querySelector('a[href="cuenta.html"]');
+        const loggedIn = localStorage.getItem('email') && localStorage.getItem('password');
+
+        if (!loggedIn) {
+            cuentaLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Debes iniciar sesión o registrarte para acceder a tu cuenta.');
+            });
+        }
+    });
+</script>
+
 <script src="./Product.js"></script>
 <script src="./data.js"></script>
 <script src="./detail.js"></script>
