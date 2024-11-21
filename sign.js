@@ -1,4 +1,3 @@
-
 const registroForm = document.getElementById('registro-form');
 
 registroForm.addEventListener('submit', (e) => {
@@ -25,3 +24,4 @@ registroForm.addEventListener('submit', (e) => {
     alert('Registro exitoso!');
     window.location.href = 'Login.html';
 });
+
